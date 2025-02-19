@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1TlVasu5BM3ZKZ0fNJmoKcm4Zylab611l
 """
 
-from google.colab import drive
+from google.colab import drive 
 drive.mount('/content/drive')
 
 import tensorflow as tf
@@ -17,7 +17,7 @@ import numpy as np
 
 (x_train,y_train),(x_test,y_test)=keras.datasets.mnist.load_data()
 
-plt.matshow(x_test[12])
+plt.matshow(x_test[12]) #showing an example
 print(y_test[12])
 
 x_train=x_train/255
@@ -43,7 +43,7 @@ model.fit(x_train_flatted,y_train,epochs=5,callbacks=tb_callback)
 
 model.evaluate(x_test_flatted,y_test)
 
-y_predict=model.predict(x_test_flatted)
+y_predict=model.predict(x_test_flatted) #predict
 y_predict[12]
 
 np.argmax(y_predict[12])
