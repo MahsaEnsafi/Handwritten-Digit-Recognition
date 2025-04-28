@@ -1,7 +1,8 @@
-This repository contains a simple deep learning model for handwritten digit recognition using the MNIST dataset. The model is built using TensorFlow and Keras and trained on handwritten digits (0-9).
-Features:
-1. Uses the MNIST dataset for training and testing.
-2. Neural network architecture with one hidden layer using ReLU activation.
-3. Adam optimizer for efficient learning.
-4. Confusion matrix visualization using Seaborn.
-5. TensorBoard logging for monitoring training performance.
+Features
+
+- Data Handling: Loads and preprocesses the MNIST dataset by normalizing pixel values and reshaping images.
+- Data Augmentation: Enhances the dataset with random zoom, flipping, and rotation.
+- CNN Architecture: Constructs a convolutional neural network with convolutional, pooling, and fully connected layers.
+- Model Training: Compiles and trains the model using the Adam optimizer and sparse categorical cross-entropy loss.
+- Evaluation: Assesses performance on the test set and generates predictions along with a confusion matrix.
+- Visualization: Plots training and validation loss and accuracy.
